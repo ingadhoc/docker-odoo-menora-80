@@ -11,7 +11,7 @@ RUN git clone https://github.com/ingadhoc/odoo-addons.git
 RUN git clone https://github.com/ingadhoc/odoo-argentina.git
 RUN pip install geopy==0.95.1 BeautifulSoup
 RUN git clone https://github.com/ingadhoc/aeroo_reports.git
-RUN bzr clone lp:menora
+RUN bzr branch lp:menora
 RUN pip install genshi==0.6.1 http://launchpad.net/aeroolib/trunk/1.0.0/+download/aeroolib.tar.gz
 
 # Checkout last for master or specific for testing or release
