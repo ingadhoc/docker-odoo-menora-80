@@ -7,6 +7,7 @@ RUN mkdir -p /opt/odoo/sources
 WORKDIR /opt/odoo/sources
 
 # ADHOC addons
+RUN apt-get install -y bzr
 RUN git clone https://github.com/ingadhoc/odoo-addons.git
 RUN git clone https://github.com/ingadhoc/odoo-argentina.git
 RUN pip install geopy==0.95.1 BeautifulSoup
