@@ -5,6 +5,7 @@ ENV REFRESHED_AT 2014-08-30
 
 # Update odoo server
 WORKDIR /opt/odoo/server/
+RUN git pull
 RUN git checkout 8.0
 RUN python setup.py install
 
