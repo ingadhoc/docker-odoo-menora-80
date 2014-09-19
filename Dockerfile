@@ -1,7 +1,7 @@
 FROM adhoc/odoo:8.0
 MAINTAINER Damian Soriano <ds@ingadhoc.com>
 
-ENV REFRESHED_AT 2014-08-30
+ENV REFRESHED_AT 2014-09-19
 
 # Update odoo server
 WORKDIR /opt/odoo/server/
